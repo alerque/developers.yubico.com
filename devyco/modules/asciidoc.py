@@ -15,6 +15,7 @@ class AsciiDocModule(Module):
         super(AsciiDocModule, self).__init__()
         self._asciidoc = AsciiDocAPI()
         self._asciidoc.options('--no-header-footer')
+        self._asciidoc.attributes['fragments'] = os.path.join(os.getcwd(), 'fragments')
 
     def _run(self):
         for item in self.list_files(['*.adoc', '*.asciidoc', '*.txt']):

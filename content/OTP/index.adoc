@@ -9,6 +9,8 @@ Before you add YubiKey OTP to your application that uses YubiCloud (our network 
 need to get an _API key_ from link:https://upgrade.yubico.com/getapikey/[here]. Getting an API key is quick and
 free and helps us preventing misuse of YubiCloud.
 
+include::{fragments}/header.adoc[]
+
 == Implementing ==
 We provide two alternatives:
 
